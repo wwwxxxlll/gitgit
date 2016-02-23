@@ -1,0 +1,29 @@
+
+<html>
+<head>
+		<Meta charset='utf-8'>
+</head>
+<body>
+<div>	
+		<h1>标题</h1>
+		{% for i in obj1 %}
+			<p> 
+				ID:{{i.id }}
+				栏目：{{i.lanmu}}
+				<a href='#'>标题：{{i.title}}</a>
+				作者：{{i.author}}
+				日期：{{i.date}}
+			</p>
+			<hr>
+		{% endfor %}
+		<a href='/add/'>添加文章</a>
+		
+</div>	
+</body>
+</html>
+
+
+
+
+
+
